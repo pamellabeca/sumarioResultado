@@ -1,4 +1,8 @@
-.resultado{
+
+
+
+
+.resultado, .sumario{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -6,4 +10,9 @@
     text-align: center;
 
     width: 50%;
+}
+
+.media-icon{
+    width: 20px;
+    height: 20px;
 }
