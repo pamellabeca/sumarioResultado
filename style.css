@@ -2,6 +2,10 @@
 
 body{
     background-color: #f3f5fc;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .principal{
@@ -123,4 +127,49 @@ a{
 }
 .button:hover{
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 780px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        top: 10%;
+        left: 5%;
+    }
+    .resultado,
+    .sumario {
+        width: 100vw;
+    }
+    .resultado{
+        border-radius: 15px 15px 0 0;
+    }
+    .sumario{
+        order: 2;
+        border-radius: 0 0 15px 15px;
+    }
+    .sumario-itens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 4em;
+        text-align: center;
+        align-self: center;
+        border: 1px solid #5c101c;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    .sumario-itens span {
+        margin-bottom: flex;
+    }
+    .button {
+        margin-top: 20px;
+    }
+    .titulo{
+        position: relative;
+        top: 0;
+    }
 }
